@@ -26,9 +26,9 @@ public class EmployeeAndOffshore extends EmployeeAndTugrik {
 
     public void setInOffshore(boolean inOffshore) {
         this.inOffshore = inOffshore;
-        if (inOffshore) {
+        if (inOffshore == true) {
             tax = 0;
-        }
+        } else tax = 20;
     }
 
     @Override
